@@ -39,15 +39,8 @@ function fullPage() {
                     },
                     offset: "-=1700"
                 }).add({
-                    targets: nextClass + " .page-num p",
-                    translateY: ["100%", 0],
-                    translateZ: 0,
-                    easing: "easeInOutCubic",
-                    duration: 1e3,
-                    offset: "-=1200"
-                }).add({
                     targets: nextClass + " .js-letter",
-                    translateX: ["-105%", 0],
+                    translateX: ["105%", 0],
                     translateZ: 0,
                     easing: "easeInOutCubic",
                     duration: 800,
@@ -58,7 +51,7 @@ function fullPage() {
                 });
                 if (1 == index) anime({
                     targets: ".js-squid",
-                    translateX: [0, "100%"],
+                    translateX: [0, "-50%"],
                     translateZ: 0,
                     opacity: [1, 0],
                     easing: "easeOutCubic",
@@ -69,7 +62,7 @@ function fullPage() {
                 });
                 if (1 == nextIndex) anime({
                     targets: ".js-squid",
-                    translateX: ["100%", 0],
+                    translateX: ["-100%", 0],
                     translateZ: 0,
                     opacity: [0, 1],
                     easing: "easeOutCubic",
@@ -96,7 +89,7 @@ function headerColor() {
         "top" !== pageName && $(window).scrollTop() > $(window).height() ? ($("header").addClass("js-color"), $(".back-arrow").addClass("js-color")) : ($("header").removeClass("js-color"), $(".back-arrow").removeClass("js-color"))
     })
 }
-$('<img src="./assets/img/reile.jpg">'), $('<img src="./assets/img/about.jpg">'), $('<img src="./assets/img/contact.jpg">'), $(window).on("load", function() {
+$('<img src="./assets/img/about.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/music-bump.jpg">'), $('<img src="./assets/img/music-grid.jpg">'), $('<img src="./assets/img/shop.jpg">'), $('<img src="./assets/img/shows.jpg">'), $(window).on("load", function() {
     anime.timeline().add({
         targets: ".loader",
         translateY: [0, "-100%"],
@@ -108,7 +101,7 @@ $('<img src="./assets/img/reile.jpg">'), $('<img src="./assets/img/about.jpg">')
         }
     }).add({
         targets: ".js-squid",
-        translateX: ["100%", 0],
+        translateX: ["-100%", 0],
         translateZ: 0,
         opacity: [0, 1],
         easing: "easeOutCubic",
@@ -119,7 +112,7 @@ $('<img src="./assets/img/reile.jpg">'), $('<img src="./assets/img/about.jpg">')
         offset: "-=1000"
     }).add({
         targets: ".active .js-letter",
-        translateX: ["-105%", 0],
+        translateX: ["105%", 0],
         translateZ: 0,
         easing: "easeInOutCubic",
         duration: 800,
@@ -266,10 +259,6 @@ var underLayer = Barba.BaseView.extend({
             duration: 500,
             easing: "easeInOutCubic"
         }).add({
-            targets: ".active .page-num p",
-            translateY: ["100%", 0],
-            translateZ: 0
-        }).add({
             targets: "#fp-nav ul",
             translateY: [fpnav.y, 0],
             translateX: [fpnav.x, 0],
@@ -310,11 +299,6 @@ var PageTransitionTop = Barba.BaseTransition.extend({
                 }).add({
                     targets: ".fullpage__slide",
                     background: ["rgba(0,0,0,0)", "#020b16"],
-                    offset: "-=500"
-                }).add({
-                    targets: ".page-num p",
-                    translateY: [0, "100%"],
-                    translateZ: 0,
                     offset: "-=500"
                 }).add({
                     targets: "#fp-nav ul",
