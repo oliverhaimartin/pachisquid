@@ -57,7 +57,7 @@ function fullPage() {
                     offset: "-=1500"
                 });
                 if (1 == index) anime({
-                    targets: ".js-moon",
+                    targets: ".js-squid",
                     translateX: [0, "100%"],
                     translateZ: 0,
                     opacity: [1, 0],
@@ -68,7 +68,7 @@ function fullPage() {
                     }
                 });
                 if (1 == nextIndex) anime({
-                    targets: ".js-moon",
+                    targets: ".js-squid",
                     translateX: ["100%", 0],
                     translateZ: 0,
                     opacity: [0, 1],
@@ -107,7 +107,7 @@ $('<img src="./assets/img/reile.jpg">'), $('<img src="./assets/img/about.jpg">')
             $(".loader").addClass(".js-hidden")
         }
     }).add({
-        targets: ".js-moon",
+        targets: ".js-squid",
         translateX: ["100%", 0],
         translateZ: 0,
         opacity: [0, 1],
@@ -184,7 +184,7 @@ $(function() {
 };
 var state = 0;
 Barba.Dispatcher.on("newPageReady", function() {
-    if ($("#js-fullpage").length) new Parallax($(".js-parallax-moon").get(0)), new Parallax($(".js-parallax-moonlight").get(0)), new Parallax($(".js-parallax-bubbles").get(0));
+    if ($("#js-fullpage").length) new Parallax($(".js-parallax-squid").get(0)), new Parallax($(".js-parallax-bubbles").get(0));
     isSp && $(".page-top").height($(window).height()), ga("send", "pageview", window.location.pathname.replace(/^\/?/, "/") + window.location.search)
 }), $(function() {
     fullPage();
