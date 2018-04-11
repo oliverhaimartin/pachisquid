@@ -2,7 +2,7 @@ function fullPage() {
     $("#js-fullpage").fullpage({
         easingcss3: "cubic-bezier(0.645, 0.045, 0.355, 1)",
         scrollingSpeed: 1e3,
-        anchors: ["home", "release", "music", "about", "shows", "shop", "contact"],
+        anchors: ["home", "release", "music", "shows", "shop", "contact"],
         navigation: !0,
         navigationPosition: "left",
         animateAnchor: !1,
@@ -89,7 +89,7 @@ function headerColor() {
         "top" !== pageName && $(window).scrollTop() > $(window).height() ? ($("header").addClass("js-color"), $(".back-arrow").addClass("js-color")) : ($("header").removeClass("js-color"), $(".back-arrow").removeClass("js-color"))
     })
 }
-$('<img src="./assets/img/about.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/music-bump.jpg">'), $('<img src="./assets/img/music-grid.jpg">'), $('<img src="./assets/img/shop.jpg">'), $('<img src="./assets/img/shows.jpg">'), $(window).on("load", function() {
+$('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/release.jpg">'), $('<img src="./assets/img/music.jpg">'), $('<img src="./assets/img/shop.jpg">'), $('<img src="./assets/img/shows.jpg">'), $(window).on("load", function() {
     anime.timeline().add({
         targets: ".loader",
         translateY: [0, "-100%"],
