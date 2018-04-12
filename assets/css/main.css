@@ -1215,9 +1215,6 @@ header .global-nav__sns a:last-child{
 	font-family:"Futura Book";
 	z-index:0;
 }
-.image {
-	position:absolute;
-}
 @media screen and (max-width:800px){
 	.image{
 		font-size:7.5rem;
@@ -1226,7 +1223,7 @@ header .global-nav__sns a:last-child{
 }
 @media screen and (max-width:420px){
 	.image{
-		/*display:none;*/
+		position:absolute;
 	};
 }
 .image p{
