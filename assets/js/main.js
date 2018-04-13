@@ -1,3 +1,4 @@
+/* MAIN SCRIPT */
 function fullPage() {
     $("#js-fullpage").fullpage({
         easingcss3: "cubic-bezier(0.645, 0.045, 0.355, 1)",
@@ -89,7 +90,7 @@ function headerColor() {
         "top" !== pageName && $(window).scrollTop() > $(window).height() ? ($("header").addClass("js-color"), $(".back-arrow").addClass("js-color")) : ($("header").removeClass("js-color"), $(".back-arrow").removeClass("js-color"))
     })
 }
-$('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/release.jpg">'), $('<img src="./assets/img/music.jpg">'), $('<img src="./assets/img/shop.jpg">'), $('<img src="./assets/img/shows.jpg">'), $(window).on("load", function() {
+$('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/contact.jpg">'), $('<img src="./assets/img/music-bump.jpg">'), $('<img src="./assets/img/music-grid.jpg">'), $('<img src="./assets/img/shop.jpg">'), $('<img src="./assets/img/shows.jpg">'), $(window).on("load", function() {
     anime.timeline().add({
         targets: ".loader",
         translateY: [0, "-100%"],
@@ -133,22 +134,22 @@ $(function() {
             y: "100%",
             x: 0
         }, image = {
-            width: "80%",
-            height: "55.633%",
+            width: "74.81vh",
+            height: "74.81vh",
             top: "9.859%",
             marginRight: "10%",
             marginLeft: "10%"
         }, imageBig = {
-            width: "100%",
-            height: "65.492%",
+            width: "100vh",
+            height: "65.492vh",
             marginLeft: 0,
             top: 0
         }, console.log("sp" + isSp), window.matchMedia("(min-width: 801px)").matches ? (isSp = !1, fpnav = {
             y: 0,
             x: "-100%"
         }, image = {
-            width: "53.125%",
-            height: "74.81%",
+            width: "74.81vh",
+            height: "74.81vh",
             top: "auto",
             marginRight: "8%",
             marginLeft: "auto"
