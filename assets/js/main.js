@@ -381,3 +381,16 @@ var PageTransitionTop = Barba.BaseTransition.extend({
 $(function() {
     Barba.Pjax.start(), Barba.Prefetch.init(), Barba.Utils.xhrTimeout = 1e4
 });
+$(function(){
+	var r_text = new Array ();
+	r_text[0] = "the only squid making electronic music";
+	r_text[1] = "turn that frown, upside down";
+	r_text[2] = "a squid squid a day keeps the bad feels away";
+	r_text[3] = "saving smiles, one squid at a time";
+	r_text[4] = "not drownin', not frownin'";
+	r_text[5] = "a glimmer of sunshine in the ocean of blue";
+	
+	var i = Math.floor(6*Math.random())
+	
+	$("#motd").find("p").html(r_text[i]);
+})();
