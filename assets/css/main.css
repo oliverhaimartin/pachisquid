@@ -1099,8 +1099,8 @@ header .global-nav__sns a:last-child{
 .image{
 	display:block;
 	position:relative;
-	width:74.81vh;
-	height:74.81vh;
+	width:53.125%;
+	height:74.81%;
 	margin:0 15% 0 auto;
 	-webkit-box-shadow:0 80px 140px -40px rgba(0, 0, 0, 0.6);
 	box-shadow:0 80px 140px -40px rgba(0, 0, 0, 0.6);
@@ -1108,13 +1108,12 @@ header .global-nav__sns a:last-child{
 @media screen and (max-width:800px){
 	.image{
 		margin-right:40px;
-		right:-5%;
 	};
 }
 @media screen and (max-width:420px){
 	.image{
-		width:90vw;
-		height:90vw;
+		width:80%;
+		height:55.633%;
 		margin:0 10%;
 		top:9.859%;
 	};
@@ -1171,6 +1170,7 @@ header .global-nav__sns a:last-child{
 @media screen and (max-width:800px){
 	.image{
 		font-size:7.5rem;
+		right:-5%;
 	}
 }
 @media screen and (max-width:420px){

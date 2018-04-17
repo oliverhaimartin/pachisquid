@@ -133,46 +133,46 @@ $(function() {
         isSp = !0, fpnav = {
             y: "100%",
             x: 0
-        }, image = {
-            width: "74.81vh",
-            height: "74.81vh",
-            top: "9.859%",
-            marginRight: "10%",
-            marginLeft: "10%"
-        }, imageBig = {
-            width: "100vh",
-            height: "65.492vh",
-            marginLeft: 0,
-            top: 0
-        }, console.log("sp" + isSp), window.matchMedia("(min-width: 801px)").matches ? (isSp = !1, fpnav = {
-            y: 0,
-            x: "-100%"
-        }, image = {
-            width: "74.81vh",
-            height: "74.81vh",
-            top: "auto",
-            marginRight: "8%",
-            marginLeft: "auto"
-        }, imageBig = {
-            width: "60.677%",
-            height: "100vh",
-            marginLeft: "auto",
-            top: "auto"
-        }, console.log("pc" + isSp)) : window.matchMedia("(min-width: 421px)").matches && (isSp = !1, fpnav = {
-            y: "100%",
-            x: 0
-        }, image = {
-            width: "53.125%",
-            height: "74.81%",
-            marginRight: 40,
-            marginLeft: "auto"
-        }, imageBig = {
-            width: "60.677%",
-            height: "100vh",
-            top: "auto",
-            marginLeft: "auto"
-        }, console.log("tb" + isSp))
-    })
+		}, image = {
+			width: "80%",
+			height: "55.633%",
+			top: "9.859%",
+			marginRight: "10%",
+			marginLeft: "10%"
+		}, imageBig = {
+			width: "100%",
+			height: "65.492%",
+			marginLeft: 0,
+			top: 0
+		}, console.log("sp" + isSp), window.matchMedia("(min-width: 801px)").matches ? (isSp = !1, fpnav = {
+			y: 0,
+			x: "-100%"
+		}, image = {
+			width: "53.125%",
+			height: "74.81%",
+			top: "auto",
+			marginRight: "8%",
+			marginLeft: "auto"
+		}, imageBig = {
+			width: "60.677%",
+			height: "100vh",
+			marginLeft: "auto",
+			top: "auto"
+		}, console.log("pc" + isSp)) : window.matchMedia("(min-width: 421px)").matches && (isSp = !1, fpnav = {
+			y: "100%",
+			x: 0
+		}, image = {
+			width: "53.125%",
+			height: "74.81%",
+			marginRight: 40,
+			marginLeft: "auto"
+		}, imageBig = {
+			width: "60.677%",
+			height: "100vh",
+			top: "auto",
+			marginLeft: "auto"
+		}, console.log("tb" + isSp))
+	})
 }), Barba.Pjax.originalPreventCheck = Barba.Pjax.preventCheck, Barba.Pjax.preventCheck = function(evt, element) {
     return !!($(element).attr("href") && -1 < $(element).attr("href").indexOf("#")) || Barba.Pjax.originalPreventCheck(evt, element)
 };
