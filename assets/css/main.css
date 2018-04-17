@@ -1100,7 +1100,7 @@ header .global-nav__sns a:last-child{
 	display:block;
 	width:53.125%;
 	height:74.81%;
-	margin:0 15% 0 auto;
+	margin:0 8% 0 auto;
 	-webkit-box-shadow:0 80px 140px -40px rgba(0, 0, 0, 0.6);
 	box-shadow:0 80px 140px -40px rgba(0, 0, 0, 0.6);
 }
