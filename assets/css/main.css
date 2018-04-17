@@ -1157,7 +1157,7 @@ header .global-nav__sns a:last-child{
 	background:url(../img/contact.jpg) no-repeat center;
 	background-size:cover;
 }
-.image .page-num{
+.image{
 	position:absolute;
 	overflow-y:hidden;
 	right:-7.5490%;
@@ -1173,11 +1173,11 @@ header .global-nav__sns a:last-child{
 		right:-5%;
 	}
 }
-/*@media screen and (max-width:420px){
+@media screen and (max-width:420px){
 	.image .page-num{
 		position:absolute;
 	};
-}*/
+}
 .image .page-num p{
 	line-height:1.1;
 	text-shadow:0 0 10px rgba(2, 11, 22, 0.5);
