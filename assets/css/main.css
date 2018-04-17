@@ -1098,7 +1098,6 @@ header .global-nav__sns a:last-child{
 }
 .image{
 	display:block;
-	position:relative;
 	width:53.125%;
 	height:74.81%;
 	margin:0 15% 0 auto;
@@ -1115,7 +1114,7 @@ header .global-nav__sns a:last-child{
 		width:80%;
 		height:55.633%;
 		margin:0 10%;
-		top:0;
+		top:9.859%;
 	};
 }
 .image__over{
@@ -1172,11 +1171,6 @@ header .global-nav__sns a:last-child{
 		font-size:7.5rem;
 		right:0;
 	}
-}
-@media screen and (max-width:420px){
-	.image{
-		position:absolute;
-	};
 }
 .image p{
 	line-height:1.1;
