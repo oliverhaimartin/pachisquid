@@ -514,6 +514,7 @@ img{
 	margin:0 0 0 auto;
 	-webkit-box-shadow:none;
 	box-shadow:none;
+	right:0%;
 }
 @media screen and (max-width:420px){
 	.page-top .image{
