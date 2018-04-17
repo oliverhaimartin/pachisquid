@@ -1165,7 +1165,7 @@ header .global-nav__sns a:last-child{
 	font-size:15rem;
 	color:#fff;
 	font-family:"Futura Book";
-	z-index:200;
+	z-index:0;
 }
 @media screen and (max-width:800px){
 	.image{
