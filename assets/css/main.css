@@ -1168,22 +1168,22 @@ header .global-nav__sns a:last-child{
 	z-index:200;
 }
 @media screen and (max-width:800px){
-	.image .page-num{
+	.image{
 		font-size:7.5rem;
 		right:-5%;
 	}
 }
 @media screen and (max-width:420px){
-	.image .page-num{
+	.image{
 		position:absolute;
 	};
 }
-.image .page-num p{
+.image p{
 	line-height:1.1;
 	text-shadow:0 0 10px rgba(2, 11, 22, 0.5);
 }
 @media screen and (max-width:420px){
-	.image .page-num p{
+	.image p{
 		text-shadow:0 0 5px rgba(2, 11, 22, 0.5);
 	};
 }
