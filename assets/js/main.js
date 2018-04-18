@@ -129,10 +129,10 @@ var $win = $(window),
     imageBig = {},
     isSp = !1;
 $(function() {
-    $win.on("load resize", function() {
-        isSp = !0, fpnav = {
-            y: "100%",
-            x: 0
+	$win.on("load resize", function() {
+		isSp = !0, fpnav = {
+			y: "100%",
+			x: 0
 		}, image = {
 			width: "80%",
 			height: "55.633%",
