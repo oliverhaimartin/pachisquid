@@ -518,8 +518,8 @@ img{
 @media screen and (max-width:420px){
 	.page-top .image{
 		width:100%;
-		height:65.492% !important;
-		top:auto;
+		height:70.492% !important;
+		top:0;
 	};
 }
 .page-top .image__release{
